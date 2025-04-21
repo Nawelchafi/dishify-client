@@ -1,0 +1,115 @@
+
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 5px;
+  border-color: #d5e893;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-radius: 5%;
+}
+.nav-container .logo {
+  display: flex;
+  padding: 0 5%;
+  align-items: flex-start;
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  width: 5vw; /* 10% of the viewport width */
+  min-width: 50px; /* Ensures the logo doesn't get too small */
+  max-width: 150px;
+}
+.nav-container .links{
+ display: none;
+}
+@media (min-width: 768px) {
+.nav-container .links {
+  padding: 0 10%;
+  display: flex;
+  justify-content: space-around;
+  gap: 5%;
+  align-items: center;
+ 
+}
+
+.links a {
+  text-decoration: none;
+}
+.registration {
+    margin: 10px 0;
+  
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+  justify-content: space-around;
+  border: #2e6b3f 2px solid;
+  border-radius: 5%;
+}
+.registration .register {
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #2E6C3F;
+  text-decoration: none;
+  color: White;
+  font-weight: bold;
+}
+.registration .login {
+  padding: 10px;
+  width: fit-content;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: bold;
+}
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 10px;
+  margin: 5px;
+  border-color: #d5e893;
+  border-style: solid;
+  border-width: 0 0 2px 0;
+  border-radius: 5%;
+}
+
+  .hamburger {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    
+  }
+   .links { /* links styling on mobile*/ 
+    display: none; 
+    flex-direction: column;
+    background-color: rgba(213, 232, 147  );
+    position: absolute;
+    top: 60px;
+    right: 0px;
+    width: 100vw;
+    padding: 10px ;
+    z-index: 10;
+     height: fit-content;
+  }
+  .links a {
+    text-decoration: none;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .registration {
+    display: none;
+  }
+  
+  .links.open { /*applied after hmbrgr btn click */
+    display: flex; 
+   
+  }
+}

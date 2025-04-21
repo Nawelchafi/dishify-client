@@ -1,0 +1,243 @@
+.cover {
+  position: relative;
+  width: 100%;
+  overflow: hidden; /* Prevents overflow of child elements */
+  box-sizing: border-box;
+}
+.cover-img {
+  width: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+.headers {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  top: 15%;
+  left: 7%;
+  text-align: left;
+  color: #333333;
+  z-index: 10;
+  /* -webkit-text-stroke: 1px #2E6C3F; /* Border around each letter */
+}
+
+.headers h1 {
+  width: 60%;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 5px;
+  color: #333333;
+}
+
+.headers h3 {
+  width: 60%;
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 510;
+  margin-top: 10px;
+  padding: 0;
+  color: #2e6c3f;
+}
+.join-btn {
+  text-decoration: none;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #2e6c3f;
+  text-decoration: none;
+  color: White;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.join-btn .arrow {
+  color: white;
+  padding: 0 10px;
+}
+
+.join-btn:hover {
+  border: 2px solid #2e6c3f;
+  background-color: #d5e893;
+  color: #333333;
+}
+.join-btn:hover .arrow {
+  color: black;
+}
+.titles {
+  font-family: "Oswald", Helvetica, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: black;
+}
+
+.features {
+  display: flex;
+  width: 80%;
+  box-sizing: border-box;
+  justify-content: space-around;
+  background-color: #d5e893;
+  border-radius: 20px;
+  padding: 20px 10px;
+}
+.feature-card {
+  width: 80%;
+  padding: 20px;
+}
+.feature-icon {
+  max-width: 40px;
+  max-height: 40px;
+}
+.features-icon {
+  color: #2e6c3f;
+}
+.feature-cards h2 {
+  color: black;
+}
+.feature-cards p {
+}
+@media (max-width: 768px) {
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5%;
+    align-items: center;
+  }
+}
+.statistics {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.statistic-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 100%;
+  max-width: 800px;
+  gap: 20px;
+}
+.statistic-icon {
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: contain;
+}
+.statistic-card h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #333;
+}
+
+.statistic-card p {
+  font-size: 14px;
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .statistic-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .feature-icon {
+    margin-bottom: 10px;
+  }
+}
+.footer {
+  background-color: #2e6c3f;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.quick-links,
+.social-media {
+  flex: 1;
+  min-width: 200px;
+}
+
+.quick-links h3,
+.social-media h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #d5e893;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.quick-links li {
+  margin: 5px 0;
+}
+
+.quick-links a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #d5e893;
+}
+
+.social-media .icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-media a {
+  color: white;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+  color: #d5e893;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+  border-top: 1px solid #d5e893;
+  padding-top: 10px;
+  font-size: 14px;
+  color: #d5e893;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .quick-links,
+  .social-media {
+    text-align: center;
+  }
+}
