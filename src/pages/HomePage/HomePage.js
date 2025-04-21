@@ -74,16 +74,16 @@ function HomePage() {
             <img className="statistic-icon" src={family} alt="family-logo" />
           </div>
           <div>
-            <h2>20% ate more meals togeather at home</h2>
-            <p>Plan your weekly meals with ease and stay organized</p></div>
+          <h2>20% ate more meals togeather at home</h2>
+          <p>Plan your weekly meals with ease and stay organized</p></div>
         </div>
         <div className="statistic-card">
           <div >
             <img className="statistic-icon" src={timer} alt="timer-logo" />
           </div>
           <div>
-            <h2>33% reduction in time spent in cooking</h2>
-            <p>Plan your weekly meals with ease and stay organized</p>
+          <h2>33% reduction it time spent in cooking</h2>
+          <p>Plan your weekly meals with ease and stay organized</p>
           </div>
         </div>
         <div className="statistic-card">
@@ -91,12 +91,12 @@ function HomePage() {
             <img className="statistic-icon" src={lowcost} alt="cost-logo" />
           </div>
           <div>
-            <h2>20% reduction in food costs</h2>
+            <h2>20% reduction Reduction if food costs</h2>
             <p>Plan your weekly meals with ease and stay organized</p>
           </div>
         </div>
       </section>
-      <Footer />
+     <Footer/>
     </div>
   );
 }
