@@ -5,9 +5,16 @@
 .bold {
   font-weight: bold;
 }
+ body {
+  height: 100% !important;
+  margin: 0;
+  padding: 0;
+  background-color: white !important; 
+}
 * {
   font-family: "Oswald", sans-serif;
+
   font-size: 16px;
   line-height: 1.5;
-  color: #333333;
+  color: rgb(32, 31, 31) !important;
 }

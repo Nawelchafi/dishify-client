@@ -8,6 +8,7 @@ import RecipiesPage from "./pages/RecipiesPage/RecipiesPage"
 import SignUpPage from "./pages/SignUpPage/SignUpPage"
 import NotFoundPage from "./pages/NotFoundPage/NotFoundPage";
 import LogInPage from './pages/LogInPage/LogInPage';
+import NewRecipie from './pages/NewRecipie/NewRecipie';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/recipies" element={<RecipiesPage />} />
+        <Route path="/newRecipie" element={<NewRecipie />} />
         <Route path="/register" element={<SignUpPage />} />
         <Route path="/login" element={<LogInPage />} />
         <Route path="/about" element={<AboutPage />} />
